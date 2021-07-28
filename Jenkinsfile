@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage("build"){
+        stage ("git checkout") {
             steps {
-                echo "building the job"
+                git branch: 'develop', url: 'https://github.com/Sushanta-lab/Learn.git'
             }
         }
     }
