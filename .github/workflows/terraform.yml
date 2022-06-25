@@ -18,7 +18,7 @@ jobs:
            uses: hashicorp/terraform-github-actions@master
            with:
              tf_actions_version: 1.1.9
-             tf_actions_subcommand: "apply -var-file '../cluster_config/dev/terraform.gcpvars' -auto-approve"
+             tf_actions_subcommand: apply -var-file '../cluster_config/dev/terraform.gcpvars' -auto-approve
            env:
              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
