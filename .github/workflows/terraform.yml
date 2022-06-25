@@ -20,7 +20,7 @@ jobs:
              tf_actions_version: 1.1.9
              tf_actions_subcommand: 'apply'
            env:
-             TF_CLI_ARGS: '-var-file "../cluster_config/dev/terraform.gcpvars" -auto-approve'
+             TF_CLI_ARGS_apply: '-var-file "../cluster_config/dev/terraform.gcpvars" -auto-approve'
              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
