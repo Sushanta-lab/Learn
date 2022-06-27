@@ -27,7 +27,7 @@ jobs:
                cd "/home/runner/work/_temp/terraform_git/scripts/templates/gcp"
              tf_actions_subcommand: 'apply'
            env:
-             TF_CLI_ARGS_apply: '-var-file "/home/runner/work/Learn/terraform_git/scripts/templates/cluster_config/dev/terraform.gcpvars" -auto-approve'
+             TF_CLI_ARGS_apply: '-var-file "/home/runner/work/Learn/Learn/terraform_git/scripts/templates/cluster_config/dev/terraform.gcpvars" -auto-approve'
              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
