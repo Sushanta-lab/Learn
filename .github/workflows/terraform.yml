@@ -14,7 +14,8 @@ jobs:
            with:
              tf_actions_version: 1.1.9
              run: |
-               pwd
+               var=$(pwd)
+               echo $var
                cd "/home/runner/work/_temp/terraform_git/scripts/templates/gcp"
              tf_actions_subcommand: 'init'
          - name: 'Terraform Apply'
