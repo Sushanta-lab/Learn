@@ -8,23 +8,25 @@ jobs:
       runs-on: ubuntu-latest
       steps:
          - name: 'Checkout'
-           uses: actions/checkout@master
+           uses: actions/checkout@v2
+         - name:  'Setup Terraform'
+           uses: hashicorp/setup-terraform@v1
          - name: 'Terraform Init'
-           uses: hashicorp/terraform-github-actions@master
+   #        uses: hashicorp/terraform-github-actions@master 
            with:
              tf_actions_version: 1.1.9
              run: |
-               cd "/home/runner/work/Learn/Learn/terraform_git/scripts/templates/gcp"
+               cd "terraform_git/scripts/templates/gcp"
              tf_actions_subcommand: 'init'
          - name: 'Terraform Apply'
-           uses: hashicorp/terraform-github-actions@master
+    #       uses: hashicorp/terraform-github-actions@master
            with:
              tf_actions_version: 1.1.9
              run: |
-               cd "/home/runner/work/Learn/Learn/terraform_git/scripts/templates/gcp"
+               cd "terraform_git/scripts/templates/gcp"
              tf_actions_subcommand: 'apply'
            env:
-             TF_CLI_ARGS_apply: '-var-file "/home/runner/work/Learn/Learn/terraform_git/scripts/templates/cluster_config/dev/terraform.gcpvars" -auto-approve'
+             TF_CLI_ARGS_apply: '-var-file "terraform_git/scripts/templates/cluster_config/dev/terraform.gcpvars" -auto-approve'
              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
