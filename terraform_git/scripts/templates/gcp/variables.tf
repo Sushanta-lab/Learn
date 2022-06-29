@@ -821,4 +821,7 @@ variable "binary_auth_region" {
   type        = string
   description = "The name of region (multiregional or regional). In case of multiregional, values like 'europe', 'asia' etc. are expected. In case of regional, values like 'europe-west3', 'europe-central1' etc. are expected"
 }*/
-
+variable "access_token" {
+  type        = string
+  description = " Credentials (required)"
+}
