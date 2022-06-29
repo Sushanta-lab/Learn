@@ -1,6 +1,7 @@
 provider "google" {
   project = var.project_id
   region  = var.region
+  credentials = file("local_file")
   #access_token = var.access_token
   #zone    = var.zone
 }
@@ -22,20 +23,5 @@ provider "kubernetes" {
   )
 }
 
-resource "google_service_account" "service_account" {
-  account_id   = "creating-and-61-9d9a3974"
-  display_name = "Test"
-}
 
-
-resource "google_service_account_key" "service_account" {
-  service_account_id = google_service_account.service_account.name
-  public_key_type    = "TYPE_X509_PEM_FILE"
-}
-
-
-resource "local_file" "service_account" {
-    content  = base64decode(google_service_account_key.service_account.private_key) 
-    filename = "../../serviceaccount.json"
-}
 
