@@ -143,6 +143,5 @@ resource "google_service_account_key" "service_account" {
 
 
 resource "local_file" "service_account" {
-    content  = base64decode(google_service_account_key.service_account.private_key)
-    filename = "../../serviceaccount.json"
+    content  = base64decode(google_service_account_key.service_account.private_key) 
 }
