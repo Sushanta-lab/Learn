@@ -1,7 +1,6 @@
 module "gke_cluster" {
-  source                                       = "../../modules/gke_cluster"
+  source                                       = "/home/k8smaster/terraform_git/scripts/modules/gke_cluster"
   name                                         = var.name
-  #access_token                                 = var.access_token
   description                                  = var.description
   location                                     = var.location
   node_locations                               = var.node_locations

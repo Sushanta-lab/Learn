@@ -30,7 +30,7 @@ variable "location" {
 
 
 ######### SpringApp Deployment #########
-variable "name" {
+variable "app_name" {
   type        = string
   description = "The name of the cluster (required)"
 }
@@ -45,4 +45,18 @@ variable "namespace" {
   description = "Please enter desired namespace :"
 }
 
+variable "docker-username" {
+  type        = string
+  description = "Please provide docker-username :"
+}
+
+variable "docker-password" {
+  type        = string
+  description = "Please provide docker-password :"
+}
+
+variable "docker-server" {
+  type        = string
+  description = "Please provide docker-server :"
+}
 

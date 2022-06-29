@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: gcr.io/creating-and-61-b44a31e3/springjar
+  repository: gcr.io/creating-and-61-b3ec5e01/springjar
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: BUILD_NUM
+  tag: VERSION
 
 imagePullSecrets: []
 nameOverride: ""

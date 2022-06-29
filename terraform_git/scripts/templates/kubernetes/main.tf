@@ -31,7 +31,6 @@ module "rbac" {
   namespace = var.rbac_namespace
   subject   = var.subject
   depends_on = [module.namespaces]
-
 }
 
 /*module "service_account" {

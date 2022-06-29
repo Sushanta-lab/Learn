@@ -1,8 +1,6 @@
 provider "google" {
   project = var.project_id
   region  = var.region
-  credentials = "../../serviceaccount.json"
-  #access_token = var.access_token
   #zone    = var.zone
 }
 

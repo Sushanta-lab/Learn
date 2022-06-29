@@ -741,8 +741,5 @@ variable "max_unavailable_app" {
   description = "The number of nodes that can be simultaneously unavailable during an upgrade. Increasing max_unavailable raises the number of nodes that can be upgraded in parallel."
 }
 
-#variable "access_token" {
-#  type        = string
-#  description = " Credentials (required)"
-#}
+
 

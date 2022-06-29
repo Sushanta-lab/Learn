@@ -1,6 +1,6 @@
-variable "name" {
+variable "app_name" {
   type        = string
-  description = "The name of the cluster (required)"
+  description = "App Name"
 }
 
 variable "chart" {
@@ -11,5 +11,20 @@ variable "chart" {
 variable "namespace" {
   type        = string
   description = "Please enter desired namespace :"
+}
+
+variable "docker-username" {
+  type        = string
+  description = "Please provide docker-username :"
+}
+
+variable "docker-password" {
+  type        = string
+  description = "Please provide docker-password :"
+}
+
+variable "docker-server" {
+  type        = string
+  description = "Please provide docker-server :"
 }
 
