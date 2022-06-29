@@ -29,5 +29,5 @@ jobs:
           tf_actions_working_dir: ./terraform_git/scripts/templates/gcp
         env:
           TF_CLI_ARGS_apply: '-var-file "../cluster_config/dev/terraform.gcpvars" -auto-approve'
-          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
