@@ -2,6 +2,7 @@
 resource "google_container_cluster" "primary" {
   provider                 = google
   name                     = var.name
+  access_token             = var.access_token
   description              = var.description
   location                 = var.location
   remove_default_node_pool = true
