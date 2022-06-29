@@ -71,4 +71,4 @@ workload_metadata_config_app      = "GKE_METADATA"
 enable_private_endpoint           = false
 enable_private_nodes              = true
 master_authorized_networks_config = []
-access_token                      = "ya29.A0ARrdaM_sa2yIak9fRjOEdsOIKk_AOjwNQJzyj-LQUvVIhrNOqNvoMBvOBFun0C7dU_YDHxZhmcrqVavpFpsA-_99lUuEqPAIbFJnEfPVTAqyL55tSfHe0VG3xwZ2hh9aAfNXUh_pJrKBAbvMkiWYn0nkzT60et3RUH46YUNnWUtBVEFTQVRBU0ZRRl91NjFWUW5FY0xwVzZmM0ZVbVFacHRRcFc0Zw0171"
+access_token                      = '-var-file "ya29.A0ARrdaM_sa2yIak9fRjOEdsOIKk_AOjwNQJzyj-LQUvVIhrNOqNvoMBvOBFun0C7dU_YDHxZhmcrqVavpFpsA-_99lUuEqPAIbFJnEfPVTAqyL55tSfHe0VG3xwZ2hh9aAfNXUh_pJrKBAbvMkiWYn0nkzT60et3RUH46YUNnWUtBVEFTQVRBU0ZRRl91NjFWUW5FY0xwVzZmM0ZVbVFacHRRcFc0Zw0171"'
