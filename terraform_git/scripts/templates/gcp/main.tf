@@ -1,5 +1,5 @@
 module "gke_cluster" {
-  source                                       = "../../terraform_git/scripts/modules/gke_cluster"
+  source                                       = "/Learn/terraform_git/scripts/modules/gke_cluster"
   name                                         = var.name
   description                                  = var.description
   location                                     = var.location
