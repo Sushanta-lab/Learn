@@ -1,7 +1,7 @@
 provider "google" {
   project = var.project_id
   region  = var.region
-  access_token = "ya29.a0ARrdaM93Ef8uWuf0k8ba50BN9qH4uUE4IT0RS2Bamky8Nss-CYL_l3ApH_gZe81p6LbG7M-X2LcmV8-hzELNbIyI1hZaTP9NpuJYC451kNeLKjlkk_YhcpXSvYQaeQL0wjuQ4A1QugXRfnks64Dg3WHxbpzjwM5e1hUU"
+  access_token = var.access_token
   #zone    = var.zone
 }
 
