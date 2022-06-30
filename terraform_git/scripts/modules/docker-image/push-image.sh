@@ -1,7 +1,7 @@
-export DOCKER_REGISTRY="gcr.io/creating-and-61-b3ec5e01"
+export DOCKER_REGISTRY="gcr.io/creating-and-61-efdbbd57"
 export VERSION="v2"
 export DOCKER_UN="_dcgcloud_token"
-export DOCKER_PW="ya29.a0ARrdaM_ErYRuWILOO5GaJJyIBqw5901G9eaEogV2CGDCJtnk6T2PSXMGmIzTECEmC9tuVmI7VHHURl_nzvbPO-YmpgAnQNj6M8SnAAfvLB6TodLn9DKEakKgaZZrZ6Wbq84qXPvewjux4Y_kYUkJqUgud2MwMuqadkzCM8uOSOQa1sOKG7r9QEdSUlBarWA1eMFNyYO1xZQB84zfVohlf-aEPzKp6LJUvjR9hYkVdSJ3yuFBtl00Lanfg5kyz-ZE3gYbNQ"
+export DOCKER_PW="ya29.a0ARrdaM-rH4HaJ1jesaJghF3oxIdO33gvrq5VeT_DKDTI36zorJr2z9q0gv4B9oL1avdsRcAGqMFmY6DPM_IG6oyR_VHrvJxZjYId9nKUH_LjVnMahOSHVY-3IJnsqTcW2vDk7Fqs_usxi5QBQk_4HDAgQu8T4TlmkIH2qRJdAder2RqSpYQ2AbJv4vZwssF-BQUEt792M-PKzZnuNaQF9kf3K-M7yX4mSKAo3PA-dFcGGc5xi0kKGEQIT4fNj0NRD8FXlg"
 
 set -u # or set -o nounset
 : "$1"

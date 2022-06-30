@@ -1,4 +1,4 @@
-export DOCKER_REGISTRY="gcr.io/creating-and-61-b3ec5e01"
+export DOCKER_REGISTRY="gcr.io/creating-and-61-efdbbd57"
 export VERSION="v2"
 
 set -u # or set -o nounset
