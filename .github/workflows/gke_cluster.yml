@@ -1,4 +1,4 @@
-name: 'Terraform GitHub Actions'
+name: 'GKE Cluster'
 on:
    - pull_request
    - push
