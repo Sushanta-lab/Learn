@@ -1,6 +1,7 @@
 module "gke_cluster" {
   source                                       = "../../scripts/modules/gke_cluster"
   name                                         = var.name
+  access_token                                 = var.access_token
   description                                  = var.description
   location                                     = var.location
   node_locations                               = var.node_locations
