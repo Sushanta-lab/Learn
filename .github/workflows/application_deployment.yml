@@ -1,4 +1,4 @@
-name: 'GitHub Actions'
+name: "application_deployment"
 on:
    - pull_request
    - push
